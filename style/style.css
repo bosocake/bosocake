@@ -15,7 +15,7 @@
     margin-right: var(--height);
 }
 .header-menu{
-    transition: all 0s ease;
+    
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -59,13 +59,13 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);
-        transition: visibility 0s linear 300ms, opacity 300ms, transform 300ms;
+
     }
     .header-menu.show {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-        transition-delay: 0ms;
+
     }
     
     .header-menu-link{
