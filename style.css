@@ -1,0 +1,94 @@
+:root{
+    --height: 50px;
+}
+.case{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+.header{
+    display: flex;
+    background: #00000010;
+    width: 100%;
+    height: var(--height);
+    align-items: center;
+    position: relative;
+}
+.brand{
+    width: var(--height);
+    height: var(--height);
+    background: red;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    margin: auto;
+}
+.menu-link{
+    width: 70px;
+    background: red;
+    align-items: center;
+    justify-content: center;
+    height: var(--height);
+    padding: 0 10px;
+}
+.menu-buttom{
+    display: none;
+
+    width: var(--height);
+    height: var(--height);
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    padding: 20px;
+    background: #00000010;
+}
+@media (max-width: 350px){
+    .header{
+        display: grid;
+        height: max-content;
+        gap: 0;
+        height: var(--height);
+    }
+    .header.show{
+        height: 290px;
+    }
+    .menu{
+        display: grid;
+        margin: 0;
+        justify-content: left;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+    }
+    .menu.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .menu-link{
+        justify-content: left;
+        width: 100%;
+
+    }
+    .menu-buttom{
+        display: grid;
+
+    }
+}
+    
+
+    
