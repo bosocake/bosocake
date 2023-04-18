@@ -76,7 +76,7 @@
     height: 100px;
     background: #191919;
 }
-@media (max-width: 350px){
+@media (max-width: 480px){
     
     .header{
         display: grid;
