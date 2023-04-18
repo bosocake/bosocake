@@ -5,40 +5,52 @@
     max-width: 800px;
     width: 100%;
     margin: auto;
-    padding: 20px;
     gap: 20px;
+    position: relative;
+}
+.container{
+    width: 100%;
+    position: fixed;
 }
 .header{
     display: flex;
-    background: #00000010;
+    background: #191919;
     width: 100%;
     height: var(--height);
     align-items: center;
-    position: relative;
+    align-content: flex-start;
 }
 .brand{
     width: var(--height);
     height: var(--height);
-    background: red;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+}
+.img{
+
+}
+.logo{
+    opacity: 0.75;
 }
 .menu{
     display: flex;
     margin: auto;
 }
 .menu-link{
+    text-transform: capitalize;
     width: 70px;
-    background: red;
     align-items: center;
     justify-content: center;
     height: var(--height);
-    padding: 0 10px;
+    opacity: 0.75;
+    transition: all 0s ease;
+}
+.menu-link:hover, .logo:hover{
+    opacity: 1;
 }
 .menu-buttom{
     display: none;
-
     width: var(--height);
     height: var(--height);
     justify-content: center;
@@ -51,25 +63,32 @@
 }
 .main{
     width: 100%;
-    padding: 20px;
-    background: #00000010;
+    padding: 10px;
+    margin-top: var(--height);
+    gap: 20px;
+}
+
+.product{
+    height: 100px;
+    background: #191919;
 }
 @media (max-width: 350px){
+    
     .header{
         display: grid;
-        height: max-content;
-        gap: 0;
         height: var(--height);
     }
     .header.show{
-        height: 290px;
+        height: 250px;
+        box-shadow: 0 0 5px 0px #000;
+
     }
+    
     .menu{
         display: grid;
         margin: 0;
         justify-content: left;
         grid-template-columns: 1fr;
-        padding: 20px;
         opacity: 0;
         visibility: hidden;
         transform: translateY(-100%);
@@ -82,6 +101,7 @@
     .menu-link{
         justify-content: left;
         width: 100%;
+        padding: 0 20px;
 
     }
     .menu-buttom{
