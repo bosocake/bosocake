@@ -1,21 +1,20 @@
 :root{
     --height: 50px;
 }
-.case{
-    max-width: 800px;
-    width: 100%;
-    margin: auto;
-    gap: 20px;
-    position: relative;
-}
+
+
 .container{
     width: 100%;
     position: fixed;
+    top: 0;
+    background: #191919;
 }
 .header{
     display: flex;
     background: #191919;
+    max-width: 800px;
     width: 100%;
+    margin: auto;
     height: var(--height);
     align-items: center;
     align-content: flex-start;
@@ -61,7 +60,12 @@
     right: 0;
     cursor: pointer;
 }
+.case{
+    width: 100%;
+}   
 .main{
+    margin: auto;
+    max-width: 800px;
     width: 100%;
     padding: 10px;
     margin-top: var(--height);
@@ -77,6 +81,7 @@
     .header{
         display: grid;
         height: var(--height);
+        margin: 0;
     }
     .header.show{
         height: 250px;
