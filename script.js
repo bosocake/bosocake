@@ -62,7 +62,7 @@ function buttom() {
     var menu = document.getElementById("menu");
     var menu_buttom = document.getElementById("menu-buttom");
     if (menu.classList.contains('show')) {
-        container.style.cssText = 'background: #191919; height: max-content;'
+        container.style.cssText = 'background: #191919; height: height: var(--height);;'
         header.classList.remove('show');
         menu.classList.remove('show');
         menu_buttom.innerHTML = "=";
