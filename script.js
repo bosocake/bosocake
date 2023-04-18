@@ -1,12 +1,12 @@
-// clone()
-// function clone() {
-//     for (let n=0; n<12; n++) {
-//         let parent = document.getElementById('group');
-//         let elem = parent.querySelector('.block');
-//         let clone = elem.cloneNode(true);
-//         clone = parent.appendChild(clone);
-//     }
-// }
+clone()
+function clone() {
+    for (let n=0; n<12; n++) {
+        let parent = document.getElementById('main');
+        let elem = parent.querySelector('.product');
+        let clone = elem.cloneNode(true);
+        clone = parent.appendChild(clone);
+    }
+}
 
 // function button() {
 //   var header_buttom = document.getElementById("header_buttom");
@@ -57,14 +57,17 @@
 
 
 function buttom() {
+    var container = document.getElementById("container");
     var header = document.getElementById("header");
     var menu = document.getElementById("menu");
     var menu_buttom = document.getElementById("menu-buttom");
     if (menu.classList.contains('show')) {
+        container.style.cssText = 'background: none; height: max-content;'
         header.classList.remove('show');
         menu.classList.remove('show');
         menu_buttom.innerHTML = "=";
     } else {
+        container.style.cssText = 'background: #19191962; height: 100vh;'
         header.classList.add('show');
         menu.classList.add('show');
         menu_buttom.innerHTML = "X";
