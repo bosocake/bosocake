@@ -1,119 +1,43 @@
-:root{
-    --height: 50px;
-}
-
-
-.container{
+.welcome{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     width: 100%;
-    position: fixed;
-    top: 0;
-    background: #191919;
-}
-.header{
-    display: flex;
-    background: #191919;
-    max-width: 800px;
-    width: 100%;
-    margin: auto;
-    height: var(--height);
-    align-items: center;
-    align-content: flex-start;
-}
-.brand{
-    width: var(--height);
-    height: var(--height);
-    overflow: hidden;
-    align-items: center;
+    height: 100vh;
     justify-content: center;
+    align-content: center;
+    padding: 20px;
 }
-.img{
-
+.name{
+    font-size: 38px;
 }
-.logo{
-    opacity: 0.75;
+.nickname{
+    opacity: 0.5;
+    
 }
-.menu{
-    display: flex;
-    margin: auto;
+.about{
+    font-size: 26px;
 }
-.menu-link{
-    text-transform: capitalize;
-    width: 70px;
-    align-items: center;
-    justify-content: center;
-    height: var(--height);
-    opacity: 0.75;
-    transition: all 0s ease;
+.button-group{
+    padding-top: 20px
 }
-.menu-link:hover, .logo:hover{
-    opacity: 1;
-}
-.menu-buttom{
-    display: none;
-    width: var(--height);
-    height: var(--height);
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-}
-.case{
-    width: 100%;
-}   
-.main{
-    margin: auto;
-    max-width: 800px;
-    width: 100%;
+.button{
+    border: 2px solid #fff;
     padding: 10px;
-    margin-top: var(--height);
-    gap: 20px;
+    justify-content: center;
+    border-radius: 5px;
 }
-
-.product{
-    height: 100px;
-    background: #191919;
-}
-@media (max-width: 480px){
-    
-    .header{
-        display: grid;
-        height: var(--height);
-        margin: 0;
-    }
-    .header.show{
-        height: 250px;
-        box-shadow: 0 0 5px 0px #000;
-
-    }
-    
-    .menu{
-        display: grid;
-        margin: 0;
-        justify-content: left;
-        grid-template-columns: 1fr;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-100%);
-    }
-    .menu.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    .menu-link{
-        justify-content: left;
+@media (max-width: 515px){
+    .button-group{
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
         width: 100%;
-        padding: 0 20px;
-
-    }
-    .menu-buttom{
-        display: grid;
-
     }
 }
+    
+
+    
+
     
 
     
