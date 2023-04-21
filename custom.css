@@ -12,24 +12,20 @@
     font-family: sans-serif;
     letter-spacing: 1px;
     /* height: max-content; */
-    /* align-content: flex-start; */
-    font-size: 16px;
+    align-content: flex-start;
+    font-weight: 900;
+    font-size: 22px;
     color: #fff;
     user-select: none;
     transition: all 0.25s ease;
-    /* border-radius: 5px; */
-
 }
-/* ::-webkit-scrollbar{
-    width: 0;
-} */
-img{
-    width: 100%;
+::-webkit-scrollbar {
+    width: 0px; 
+    height: 0px;
 }
 div, a{
     display: grid;
 }
 body{
-    background: #00000010;
-    
+    background: url(https://preview.redd.it/memi1596f0e51.png?auto=webp&s=2507741200416f6341b3052f8e2703ac7a9b25a2) no-repeat center center / cover;
 }
