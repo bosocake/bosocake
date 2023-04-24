@@ -10,27 +10,41 @@
     <title>bosocake</title>
 </head>
 <body>
-    
-    <div class="welcome">
-        <img class="photo" src="https://preview.redd.it/memi1596f0e51.png?auto=webp&s=2507741200416f6341b3052f8e2703ac7a9b25a2" alt="">
-        <div class="info">
-            <div class="name">
-                Алан Абдулин
+    <div class="menu">
+        <div class="menu-group">
+            <div class="menu-link menu-label" id="menu-link">
+                <div class="menu-photo"></div>
+                <div class="menu-title">
+                    Главная
+                </div>
             </div>
-            <div class="nickname">
-                @bosocake
+            <div class="menu-link menu-label" id="menu-link">
+                <div class="menu-photo"></div>
+                <div class="menu-title">
+                    Магазин
+                </div>
             </div>
-            <div class="about">
-                Пью чай☕
+            <div class="menu-link menu-label" onclick="qr()">
+                <div class="menu-photo menu-photo-qr"></div>
+                <div class="menu-title qr" >
+                    QR
+                </div>
             </div>
-            <div class="button-group">
-                <a class="button" href="https://t.me/bosocake" target="_blank">
-                    TELEGRAM
-                </a>
+            <div class="menu-link menu-label" id="menu-link">
+                <div class="menu-photo"></div>
+                <div class="menu-title">
+                    Переводы
+                </div>
+            </div>
+            <div class="menu-link menu-label" id="menu-link">
+                <div class="menu-photo"></div>
+                <div class="menu-title">
+                    Профиль
+                </div>
             </div>
         </div>
-        
     </div>
+    <video id="videoElement" autoplay></video>
     <script src="script.js"></script>
 </body>
 </html>
