@@ -1,38 +1,58 @@
-.welcome{
-    position: relative;
-}
-.photo{
-    z-index: -1;
-    justify-self: center;
-    position: absolute;
-    height: 100vh;
-}
-.info{
-    height: 100vh;
+
+.menu{
+    position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    justify-content: center;
-    align-content: center;
+    bottom: 0;
+    box-shadow: 0 0 5px 5px #00000010;
 }
-.button-group{
-    position: absolute;
-    align-content: flex-end;
-    height: 100vh;
-    width: 100%;
-    padding: 20px;
+.menu-group{
+    display: flex;
+    justify-content: space-evenly;
 }
-.name{
-    font-size: 32px;
-}
-.nickname{
-    opacity: 0.5;
-}
-.button{
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    border: 2px solid #fff;
+.menu-label{
     padding: 10px;
+
+}
+.menu-link{
+    justify-items: center;
+    gap: 5px;
+}
+
+.menu-photo{
+    background: url(image/qr-dark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: var(--width);
+    width: var(--width);
     border-radius: 5px;
+}
+.menu-photo-qr{
+    background: #29abe2;
+    background-image: url(image/qr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: var(--width);
+    width: var(--width);
+}
+.qr{
+    color: #29abe2;
+    font-weight: 900;
+}
+.menu-title{
+    font-size: 12px;
+}
+
+.menu-label.active .menu-photo{
+    background: url(image/qr-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: var(--width);
+    width: var(--width);
+    transform: scale(1.2);
+}
+.menu-label.active .menu-title{
+    color: #29abe2;
 }
