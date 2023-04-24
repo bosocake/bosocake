@@ -106,5 +106,32 @@
 //         fond.classList.remove('show');
 //     });
 // });
+const menuItems = document.querySelectorAll('.menu-label');
 
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    // Убираем подсветку со всех пунктов меню
+    menuItems.forEach(item => {
+      item.classList.remove('active');
+    });
+    // Добавляем класс активности только на выбранный пункт меню
+    item.classList.add('active');
+    // Заменяем фото на странице на другое фото
 
+  });
+});
+
+function qr(){
+
+    const video = document.getElementById('videoElement');
+
+    // запрашиваем доступ к камере и получаем поток мультимедийных данных
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        // отображаем видеопоток в теге video
+        video.srcObject = stream;
+      })
+      .catch(error => {
+        console.log('Ошибка:', error);
+      });
+}
