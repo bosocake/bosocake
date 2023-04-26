@@ -135,3 +135,40 @@ function qr(){
         console.log('Ошибка:', error);
       });
 }
+
+const dropdowns = document.querySelectorAll('.recipes-label');
+
+// Добавляем обработчик клика для каждого элемента
+dropdowns.forEach(dropdown => {
+  // Находим элементы "dropdown-trigger" и "dropdown-menu"
+  const trigger = dropdown.querySelector('.recipes-types');
+  const menu = dropdown.querySelector('.recipes-menu');
+  
+  // Добавляем обработчик клика на "dropdown-trigger"
+  trigger.addEventListener('click', () => {
+    // Переключаем класс "active" у "dropdown-menu"
+    menu.classList.toggle('active');
+  });
+});
+
+// var divs = document.getElementsByClassName("recipes-next");
+
+// for (var i = 0; i < divs.length; i++) {
+//   divs[i].onclick = function() {
+//     this.style.cssText = "transform: scaleY(0.5) rotate(90deg);";
+//   };
+// }
+
+const recipes_label = document.querySelectorAll('.recipes-label');
+
+recipes_label.forEach(dropdown => {
+  // Находим элементы "dropdown-trigger" и "dropdown-menu"
+  const trigger = dropdown.querySelector('.recipes-types');
+  const menu = dropdown.querySelector('.recipes-next');
+  
+  // Добавляем обработчик клика на "dropdown-trigger"
+  trigger.addEventListener('click', () => {
+    // Переключаем класс "active" у "dropdown-menu"
+    menu.classList.toggle('active');
+  });
+});
