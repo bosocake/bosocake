@@ -106,6 +106,28 @@
 //         fond.classList.remove('show');
 //     });
 // });
+
+const header = document.querySelectorAll('.header');
+
+header.forEach(header => {
+  // Находим элементы "dropdown-trigger" и "dropdown-menu"
+  const header_search = document.querySelector(".header-search");
+  const header_group = document.querySelector(".header");
+  const header_back = document.querySelector(".header-back");
+
+  // Добавляем обработчик клика на "dropdown-header_search"
+  header_search.addEventListener('click', () => {
+    // Переключаем класс "active" у "dropdown-header_group"
+    header_group.classList.toggle('active');
+
+  });
+  header_back.addEventListener('click', () => {
+    // Переключаем класс "active" у "dropdown-header_group"
+    header_group.classList.toggle('active');
+
+  });
+});
+
 const menuItems = document.querySelectorAll('.menu-label');
 
 menuItems.forEach(item => {
